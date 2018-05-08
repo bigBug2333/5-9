@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      width: 800px;
+      height: 600px;
+      background-color: #ccc;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+<button>开始游戏</button>
+<div id="map"></div>
+
+<script src="food.js"></script>
+<script src="snake.js"></script>
+<!-- <script src="snake2.js"></script> -->
+<script src="game.js"></script>
+<!-- <script src="game2.js"></script> -->
+<script>
+
+    var map = document.getElementById("map");
+    var g = new Game(map);
+    g.start();
+    // var f = new Food();
+    // f.render(map);
+    // var s = new Snake();
+    // s.render(map);
+</script>
+
+</body>
+</html>
